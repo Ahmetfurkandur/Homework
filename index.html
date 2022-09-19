@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DENEME UYGULAMA</title>
+</head>
+<body>
+    <div id="numbers"></div>
+
+
+        <script type="text/javascript">
+            let time = 0;
+            let numberInterval = setInterval(function () {
+            if (time >= 61) {
+                clearInterval(x);
+            } else {
+                if (time == 56) {
+                    document.getElementById("numbers").innerHTML = "dört";
+                } else if (time == 57) {
+                    document.getElementById("numbers").innerHTML = "üç";
+                } else if (time == 58) {
+                    document.getElementById("numbers").innerHTML = "iki";
+                } else if (time == 59) {
+                    document.getElementById("numbers").innerHTML = "bir"
+                }
+                else if (time == 60) {
+                    document.getElementById("numbers").innerHTML = "sıfır"
+                }else if (time >= 0) {
+                    document.getElementById("numbers").innerHTML = 60 - time;
+                }
+            }
+            time++;
+            index++;
+            }, 1000);
+        </script>
+    </body>
+</html>
